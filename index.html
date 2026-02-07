@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Jawab Jujur 😏</title>
+  <style>
+    body {
+      height: 100vh;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-direction: column;
+      font-family: Arial;
+    }
+
+    #no {
+      position: absolute;
+    }
+  </style>
+</head>
+<body>
+
+  <h2>Awak suka saya tak? 😳</h2>
+
+  <button onclick="yes()">YES</button>
+  <button id="no" onmouseover="lari()">NO</button>
+
+  <script>
+    function lari() {
+      const x = Math.random() * window.innerWidth;
+      const y = Math.random() * window.innerHeight;
+
+      document.getElementById("no").style.left = x + "px";
+      document.getElementById("no").style.top = y + "px";
+    }
+
+    function yes() {
+      alert("Hehe saya tahu 😆❤️");
+    }
+  </script>
+
+</body>
+</html>
